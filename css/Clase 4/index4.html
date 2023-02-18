@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo CSS</title>
+
+
+        <style>
+            *{font-size: 30px;} /* el * es que se aplica para todo */
+            *[align=left]{color:gray;} /* para todos los que tengan align=left */
+            *.rojo {color:red;} /* para los que tengan class=rojo */
+            *#conborde {border:5px solid orange;} /* para los que tengan id=conborde */
+        </style>
+
+        <link href="style4.css" media="all" rel="stylesheet"> <!-- Manera perfecta de aplicar fichero css externo-->
+
+    </head>
+    <body>
+
+        <h1>Titulo de Ejemplo</h1>
+        <p class="rojo">Texto de Ejemplo</p>
+        <p id="conborde"><span class="rojo">Texto</span> ejemplo.</p> <!-- span es como el div pero para agrupar en una linea-->
+
+        <div class="par">
+            <p>Texto de clase par</p>
+        </div>
+
+        <div class="impar">
+            <h1>Texto de la clase impar</h1>
+        </div>
+
+        <a href="https://google.com">Google</a>
+    </br>
+        <a href="https://developer.mozilla.org">Pagina guapa para ver la teoria</a>
+    </br>
+        <input type="button" value="Boton guapo">
+
+        <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" id="image">
+
+    </body>
+</html>

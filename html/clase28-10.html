@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Comentario -->
+        <!-- Base se pone delante de todos los enlace sque pongamos-->
+        <!--<base href="https://www.uax.com"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>
+            PAGINA DE PRUEBA
+        </title>
+        <style>
+            h1{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="/assets/uax/images/logo.svg">
+        <!-- Usamos div para agrupar con unos atributos que le pongamos :) -->
+        <div align="center">
+            <h1 style="color: pink;">Hola Mundo</h1>
+            <h1>Hola Mundo</h1>
+            <h1>Hola Mundo</h1>
+            <h1>Hola Mundo</h1>
+            <h2>Hola Mundo</h2>
+            <h2>Hola Mundo</h2>
+            <h2>Hola Mundo</h2>
+        </div>
+        <!-- LISTA DE DEFINICION -->
+        <dl>
+            <dt>Cafe</dt>
+            <dd>Cafe negro</dd>
+            <dt>Leche</dt>
+            <dd>Leche gallega xd</dd>
+        </dl>
+        <!-- LISTA ORDENADA -->
+        <ol reversed start="5" type="a">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li type="i">Elemento 3</li>
+            <li type="1">Elemento 4</li>
+        </ol>
+        <!-- LISTA NO ORDENADA -->
+        <ul style="list-style-type:square" >
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>   
+        </ul>
+        <!-- TABLA -->
+        <table border="1px">
+            <caption>titulo de la tabla</caption>
+            <colgroup>
+                <col style="background-color: gray">
+                <col style="background-color:lightblue">
+            </colgroup>
+            <tr>
+                <th colspan="2" id="llegada" sorted="bottom">Llegada</th>
+                <th style="background-color: gray" sorted="middle">Salida</th>
+            </tr>
+            <tr>
+                <th scope="row">Español</th>
+                <td headers="llegada">Hola</td>
+                <td>Adiós</td>
+            </tr>
+            <tr>
+                <th scope="row">Inglés</th>
+                <td headers="llegada">Hi</td>
+                <td>Goodbye</td>
+            </tr>
+            </table>   
+    </body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    color: black;
+}
+
+h2{
+    color: green;
+}
+
+ul{
+    list-style-image: url('https://www.w3schools.com/CSSref/sqpurple.gif');
+}
+
+*{
+    color:gold; /* El * es para que se aplique a todo */
+}
+
+/* Con el . se aplica solo para la clase par e impar en este caso */
+.par{
+    background-color: rebeccapurple;
+}
+
+.impar{
+    background-color: lightseagreen;
+}
+
+#image{
+    width: 100%;
+    margin: 20px 40px; /* margin: (arriba y abajo) (lados) */
+    /* Tambien te lo puedes encontrar asi:
+    margin: todo
+    margin: arriba derecha abajo izquierda
+    */
+    padding: 10px; /* Otro tipo de espaciado, diferente al margen */
+    border: 3px solid; /* Si le pongo un borde, me lo pone entre el margen y el padding (debajo del margen y encima del padding) */
+    border-color: lightseagreen;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+/* Seleccionamos los enlaces que empiecen por https */
+a[href^="https"] {
+    color: aqua;
+}
+
+/* Sobre el elemento a cuando ocurra el suceso hover(es cuando pones el raton por encima) pasa lo que esta entre corchetes */
+a:hover {color:rgb(191, 0, 255)}
+
+/* para cuando presionas el enlace */
+a:active {color:rgb(201, 255, 196)}
+
+/*   a:visited {color:purple}   */
+
+/* Se aplica para los h1 que esten dentro de un div */
+div h1 {font-size: 50px;}
+
+input[type=button]{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 15px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                        rgba(0, 0, 0, .2),
+                                        rgba(0, 0, 0, .2) 30%,
+                                        rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6);
+}
+
+input[type=button]:hover{
+    background-color: rgb(220, 106, 0);
+    color:rgb(177, 130, 68);
+}
+
+/* EL GRID ES MUY IMPORTANTE SI QUIERES HACER PAGINAS MAS PROFESIONALES */
+/* pero lo ha explicado usando librerias externas asi que no se si cae */
